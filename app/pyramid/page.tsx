@@ -33,26 +33,32 @@ const pyramidLayers = [
     description:
       "القمة التنظيمية التي تضم القيادات العليا المسؤولة عن التوجيه الاستراتيجي للاتحاد وتمثيله على أعلى المستويات الدولية.",
   },
-  {
-    level: 2,
-    title: "مجالس التمثيل",
-    titleEn: "Representation Councils",
-    icon: Users,
-    color: "bg-secondary/15 border-secondary/40",
-    textColor: "text-secondary",
-    glowClass: "glow-teal",
-    width: "max-w-lg",
-    details: [
-      "السفراء الدوليون",
-      "السفراء الإقليميون",
-      "السفراء القطاعيون",
-      "المستشارون الدوليون",
-      "المستشارون الإقليميون",
-      "المستشارون القطاعيون",
-    ],
-    description:
-      "الطبقة التمثيلية التي تشمل السفراء والمستشارين على المستويات القطاعية والإقليمية والدولية لتوسيع نفوذ الاتحاد.",
-  },
+{
+  level: 2,
+  title: "مجالس التمثيل",
+  titleEn: "Representation Councils",
+  icon: Users,
+  color: "bg-secondary/15 border-secondary/40",
+  textColor: "text-secondary",
+  glowClass: "glow-teal",
+  width: "max-w-lg",
+
+  // ✅ ده وصف البانل نفسه (اللي فوق)
+  description:
+    "الطبقة التمثيلية التي تشمل السفراء والمستشارين على المستويات الإقليمية والدولية لتوسيع أعمال الاتحاد.",
+
+  // ✅ ودي التفاصيل الداخلية
+  details: [
+    {
+      title: "هيئة السفراء الدولية",
+      description: "تمثيل الاتحاد، بناء شبكات علاقات، فتح قنوات شراكات.",
+    },
+    {
+      title: "هيئة المستشارين العليا",
+      description: "تقديم رأي استشاري رسمي ودعم التوجهات العامة للاتحاد.",
+    },
+  ],
+},
   {
     level: 3,
     title: "الأدوار التشغيلية",
@@ -162,20 +168,34 @@ export default function PyramidPage() {
                     </p>
 
                     <div className="grid gap-2 sm:grid-cols-2">
-                      {layer.details.map((d) => (
-                        <div
-                          key={d}
-                          className="flex items-center gap-2 rounded-lg bg-muted/30 px-3 py-2"
-                        >
-                          <span
-                            className={`h-1.5 w-1.5 shrink-0 rounded-full ${layer.color}`}
-                          />
-                          <span className="text-xs text-foreground/80">
-                            {d}
-                          </span>
-                        </div>
-                      ))}
-                    </div>
+  {layer.details.map((d: any, idx: number) => {
+    const isObj = typeof d === "object" && d !== null;
+
+    const title = isObj ? d.title : d;
+    const desc = isObj ? d.description : null;
+
+    return (
+      <div
+        key={isObj ? `${layer.level}-${idx}-${d.title}` : `${layer.level}-${idx}-${d}`}
+        className="rounded-lg bg-muted/30 px-3 py-2"
+      >
+        <div className="flex items-center gap-2">
+          <span className={`h-1.5 w-1.5 shrink-0 rounded-full ${layer.color}`} />
+          <span className="text-xs font-semibold text-foreground/90">
+            {title}
+          </span>
+        </div>
+
+        {desc && (
+          <p className="mt-1 text-[11px] leading-relaxed text-muted-foreground">
+            {desc}
+          </p>
+        )}
+      </div>
+    );
+  })}
+</div>
+
                   </div>
                 )}
               </div>
