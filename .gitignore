@@ -1,0 +1,6 @@
+node_modules
+.next
+out
+ghl-split-export/_next
+.DS_Store
+.env*
