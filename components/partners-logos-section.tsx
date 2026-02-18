@@ -6,27 +6,27 @@ import SectionHeading from "./section-heading";
 
 const partnerLogos = [
   {
-    src: "https://ic-union.com/wp-content/uploads/2024/11/NFI5Fz1w_400x400.jpg",
+    src: "https://storage.googleapis.com/msgsndr/gmldXiAVfpXa5TsYjRme/media/6995ddb6d614c9c8c05173c4.jpeg",
     name: "Partner 1",
   },
   {
-    src: "https://ic-union.com/wp-content/uploads/2024/11/i832065.jpg",
+    src: "https://storage.googleapis.com/msgsndr/gmldXiAVfpXa5TsYjRme/media/6995ddb6b3d5f80a744f7489.jpeg",
     name: "Partner 2",
   },
   {
-    src: "https://ic-union.com/wp-content/uploads/2024/11/260525342_1525652434456910_4406498102430586682_n-300x300.jpg",
+    src: "https://storage.googleapis.com/msgsndr/gmldXiAVfpXa5TsYjRme/media/6995ddb6d614c97a565173c5.jpeg",
     name: "Partner 3",
   },
   {
-    src: "https://ic-union.com/wp-content/uploads/2024/11/Certified-Study-Centre-Logo-300x143.png",
+    src: "https://storage.googleapis.com/msgsndr/gmldXiAVfpXa5TsYjRme/media/6995ddbdf02fa4456a5061a1.png",
     name: "Certified Study Centre",
   },
   {
-    src: "https://ic-union.com/wp-content/uploads/2024/11/IAF-234x300.png",
+    src: "https://storage.googleapis.com/msgsndr/gmldXiAVfpXa5TsYjRme/media/6995ddb6905d472473ac3572.png",
     name: "IAF",
   },
   {
-    src: "https://ic-union.com/wp-content/uploads/2024/11/20230220_1676899455-878-1-300x264.png",
+    src: "https://storage.googleapis.com/msgsndr/gmldXiAVfpXa5TsYjRme/media/6995de2fee19cf35efc89b1d.jpeg",
     name: "Partner 6",
   },
 ];

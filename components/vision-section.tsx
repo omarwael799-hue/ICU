@@ -5,12 +5,12 @@ import { ChevronLeft, ChevronRight, X } from "lucide-react";
 import gsap from "gsap";
 
 const sliderImages = [
-  "https://ic-union.com/wp-content/uploads/2025/06/Artboard-10.png",
-  "https://ic-union.com/wp-content/uploads/2025/06/Artboard-4.png",
-  "https://ic-union.com/wp-content/uploads/2025/06/Artboard-7.png",
-  "https://ic-union.com/wp-content/uploads/2025/06/Artboard-6.png",
-  "https://ic-union.com/wp-content/uploads/2025/06/Artboard-5.png",
-  "https://ic-union.com/wp-content/uploads/2025/06/Artboard-8.png",
+  "https://storage.googleapis.com/msgsndr/gmldXiAVfpXa5TsYjRme/media/6995ddb6b3d5f8c7b44f7487.jpeg",
+  "https://storage.googleapis.com/msgsndr/gmldXiAVfpXa5TsYjRme/media/6995ddb6b3d5f85fef4f7488.jpeg",
+  "https://storage.googleapis.com/msgsndr/gmldXiAVfpXa5TsYjRme/media/6995ddb6905d473589ac3571.jpeg",
+  "https://storage.googleapis.com/msgsndr/gmldXiAVfpXa5TsYjRme/media/6995ddb6905d478171ac3570.jpeg",
+  "https://storage.googleapis.com/msgsndr/gmldXiAVfpXa5TsYjRme/media/6995ddb6b3d5f8552f4f7486.jpeg",
+  "https://storage.googleapis.com/msgsndr/gmldXiAVfpXa5TsYjRme/media/6995ddb6d614c9e2625173c3.jpeg",
 ];
 
 export default function VisionSection() {
