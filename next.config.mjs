@@ -8,14 +8,13 @@ const nextConfig = {
       {
         source: "/(.*)",
         headers: [
-          // امسح X-Frame-Options أو على الأقل خليه SAMEORIGIN
+          // خلّيه مش DENY
           { key: "X-Frame-Options", value: "SAMEORIGIN" },
 
-          // ده الأهم: اسمح للـ iframe من BrandMeOn
+          // السماح بالـ iframe من BrandMeOn
           {
             key: "Content-Security-Policy",
-            value:
-              "frame-ancestors 'self' https://app.brandmeon.com https://*.brandmeon.com;",
+            value: "frame-ancestors 'self' https://app.brandmeon.com;",
           },
         ],
       },
