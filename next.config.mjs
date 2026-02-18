@@ -6,6 +6,21 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-}
 
-export default nextConfig
+  async headers() {
+    return [
+      {
+        source: "/(.*)",
+        headers: [
+          {
+            key: "Content-Security-Policy",
+            value:
+              "frame-ancestors 'self' https://app.brandmeon.com https://brandmeon.com;",
+          },
+        ],
+      },
+    ];
+  },
+};
+
+export default nextConfig;
