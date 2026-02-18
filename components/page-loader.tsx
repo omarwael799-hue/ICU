@@ -102,7 +102,7 @@ export default function PageLoader() {
         />
         <div className="absolute inset-0 flex items-center justify-center">
           <img
-            src="https://ic-union.com/wp-content/uploads/2024/11/931a979d-0d07-4020-9005-3a09f038392a-300x300.png"
+            src="https://storage.googleapis.com/msgsndr/werPeYZO9zeHeXsv0ktK/media/69955bc25c2265db681610cc.png"
             alt="ICU Logo"
             width={48}
             height={48}
